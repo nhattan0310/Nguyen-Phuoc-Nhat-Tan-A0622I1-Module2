@@ -1,5 +1,4 @@
 package ss2_loop;
-
 public class isprime_less100 {
     public static void main(String[] args) {
         int n = 100;
@@ -9,7 +8,6 @@ public class isprime_less100 {
                 System.out.println(x);
             }
             x++;
-
         }
     }
     public static boolean prime(int n){
