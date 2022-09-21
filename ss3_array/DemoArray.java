@@ -37,5 +37,9 @@ public class DemoArray {
         }
        // System.out.print("\nMax = "+searchMax(arr));
         System.out.print("\nMin = "+searchMin(arr));
+        //cach dung for each de in mang
+//        for (int element: arrA){
+//            System.out.println(element);
+//        }
     }
 }

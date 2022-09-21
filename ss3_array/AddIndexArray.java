@@ -21,7 +21,6 @@ public class AddIndexArray {
             System.out.print(arr2 + " ");
         }
     }
-
     public static int[] insertArray(int[] arr, int k, int m) {
         int[] result = new int[arr.length + 1];
         for (int i = 0; i < result.length; i++) {
