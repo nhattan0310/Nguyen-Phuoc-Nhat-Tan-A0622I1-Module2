@@ -1,4 +1,7 @@
-package ss4_oop.thuc_hanh;
-
-public class Main {
-}
+//package ss4_oop.thuc_hanh;
+//
+//import java.util.Scanner;
+//
+//public class Main {
+//
+//}

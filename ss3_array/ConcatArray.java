@@ -6,7 +6,6 @@ public class ConcatArray {
     public static void main(String[] args) {
         int[] arrA = {1,2,3,4,5};
         int[] arrB = {6,7,8,9,10};
-
         int[] arrNew = new int[arrA.length+arrB.length];
         for (int i = 0; i <arrA.length ; i++) {
             arrNew[i] =arrA[i];

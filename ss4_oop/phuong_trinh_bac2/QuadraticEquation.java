@@ -5,7 +5,7 @@ public class QuadraticEquation {
     private double a;
     private double b;
     private double c;
-    //ham khoi tao tham so
+    // khoi tao tham so
     public QuadraticEquation(double a, double b, double c) {
         this.a = a;
         this.b = b;

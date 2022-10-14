@@ -1,4 +1,4 @@
-package ss10_array_list.array_list.linked_list;
+package ss10_array_list.array_list.linked_list.array_list;
 
 import java.util.Arrays;
 
@@ -39,5 +39,13 @@ public class MyList <E>{
             }
         }
         return false;
+    }
+    public boolean add (E o){
+        if (size == elements.length ){
+            return false;
+        }
+        elements[size] = o;
+        size++;
+        return true;
     }
 }
