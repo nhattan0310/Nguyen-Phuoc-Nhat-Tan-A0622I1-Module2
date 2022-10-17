@@ -1,4 +1,4 @@
-package case_study.task2.t1;
+package case_study.models;
 
 public class Facility {
     private String serviceName;

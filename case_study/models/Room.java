@@ -1,4 +1,4 @@
-package case_study.task2.t1;
+package case_study.models;
 
 public class Room extends Facility {
     private String serviceFree;

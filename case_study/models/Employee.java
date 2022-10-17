@@ -1,4 +1,4 @@
-package case_study.task2.t2;
+package case_study.models;
 
 public class Employee extends Person {
     private String employeeID;
