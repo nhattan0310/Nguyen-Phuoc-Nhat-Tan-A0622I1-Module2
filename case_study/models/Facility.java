@@ -7,7 +7,11 @@ public class Facility {
     private int maxPeople;
     private double rentHour;
 
-    public Facility(String serviceName, double area, double costRent, int maxPeople, double rentHour) {
+    public Facility(String serviceName,
+                    double area,
+                    double costRent,
+                    int maxPeople,
+                    double rentHour) {
         this.serviceName = serviceName;
         this.area = area;
         this.costRent = costRent;

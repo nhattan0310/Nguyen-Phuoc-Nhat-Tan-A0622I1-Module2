@@ -67,4 +67,15 @@ public class Person {
     public void setGmail(String gmail) {
         this.gmail = gmail;
     }
+
+    @Override
+    public String toString() {
+        return "name='" + name + '\'' +
+                ", birthday=" + birthday +
+                ", gender='" + gender + '\'' +
+                ", identityCard=" + identityCard +
+                ", phoneNumber=" + phoneNumber +
+                ", gmail='" + gmail + '\'' +
+                '}';
+    }
 }
