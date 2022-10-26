@@ -44,10 +44,16 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     @Override
     public void edit() {
+        //Khi sửa, không được sửa ID
         System.out.println("What Do U Want To Edit ID");
-        int idEdit = sc.nextInt();
+        //int idEdit = Integer.parseInt(sc.nextLine());
+        int idEdit = Integer.parseInt(sc.nextLine());
         for (Employee employee:employeeList){
             if (idEdit == employee.getEmployeeID()){
+                //lấy được ID, in ra thông tin của employee
+                // in ra menu lựa chọn trường muốn sửa
+                // nêu chọn sửa hết, sau khi nhập lại các trường, gọi lại hàm SetAll
+                employeeList.remove(employee);
                 add();
              return;
             }

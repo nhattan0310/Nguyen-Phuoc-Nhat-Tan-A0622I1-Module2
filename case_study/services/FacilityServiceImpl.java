@@ -18,11 +18,7 @@ public class FacilityServiceImpl implements FacilityService{
         }
     }
 
-//    String serviceName,
-//    double area,
-//    double costRent,
-//    int maxPeople,
-//    double rentHour
+
 
     @Override
     public void add() {

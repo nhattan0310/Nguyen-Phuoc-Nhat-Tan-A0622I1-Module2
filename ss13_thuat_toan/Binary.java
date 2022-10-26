@@ -12,7 +12,17 @@ public class Binary {
             System.out.print("[" + i + "] = ");
             arr[i] = sc.nextInt();
         }
+    }
+        public static int findBinary(int [] arr,int phantu){
+            int index = -1;
+            for (int i = 0; i <arr.length ; i++) {
+                if (arr[i]  == phantu){
+                     index = i;
+                }
+            }
+            return index;
+        }
 //        public int binarySearch( int[] arr, int left, int right, int value){
 //        }
-    }
+
 }

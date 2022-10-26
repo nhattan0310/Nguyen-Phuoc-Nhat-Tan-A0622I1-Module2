@@ -58,6 +58,12 @@ public class Employee extends Person {
         this.salary = salary;
     }
 
+    // set tất cả các trường, trừ ID
+
+    public void setAll(){
+
+    }
+
     @Override
     public String toString() {
         return "Employee{" +

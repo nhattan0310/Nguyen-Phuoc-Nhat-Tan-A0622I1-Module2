@@ -32,7 +32,7 @@ public class AddArrayDemo {
                 arr2[i] = arr[i-1];
             }
         }else {
-            System.out.println("So TUm Bay Ko choi");
+            System.out.println("So Tum Bay Ko choi");
         }
 
         return arr2;
