@@ -60,18 +60,25 @@ public class Employee extends Person {
 
     // set tất cả các trường, trừ ID
 
-    public void setAll(){
+    public void setAll(String name,
+                       int birthday,
+                       String gender,
+                       int identityCard,
+                       int phoneNumber,
+                       String gmail,
+                       String level,
+                       String position,
+                       int salary){
 
     }
 
     @Override
     public String toString() {
-        return "Employee{" +
+        return " Employee" +
                 super.toString()+
                 "employeeID=" + employeeID +
                 ", level='" + level + '\'' +
                 ", position='" + position + '\'' +
-                ", salary=" + salary +
-                '}';
+                ", salary=" + salary ;
     }
 }

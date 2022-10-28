@@ -24,7 +24,7 @@ public class Person {
         return name;
     }
 
-    public void setName(String name) {
+    public void setName(String newName) {
         this.name = name;
     }
 
@@ -32,7 +32,7 @@ public class Person {
         return birthday;
     }
 
-    public void setBirthday(int birthday) {
+    public void setBirthday() {
         this.birthday = birthday;
     }
 
@@ -40,7 +40,7 @@ public class Person {
         return gender;
     }
 
-    public void setGender(String gender) {
+    public void setGender() {
         this.gender = gender;
     }
 
@@ -75,7 +75,6 @@ public class Person {
                 ", gender='" + gender + '\'' +
                 ", identityCard=" + identityCard +
                 ", phoneNumber=" + phoneNumber +
-                ", gmail='" + gmail + '\'' +
-                '}';
+                ", gmail='" + gmail + '\'' ;
     }
 }
