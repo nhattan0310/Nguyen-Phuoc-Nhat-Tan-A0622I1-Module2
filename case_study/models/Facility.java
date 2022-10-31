@@ -1,6 +1,6 @@
 package case_study.models;
 
-public class Facility {
+public abstract class Facility {
     private String serviceName;
     private double area;
     private double costRent;

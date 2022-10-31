@@ -1,4 +1,4 @@
-package ss11_stack_queue.bai_tap;
+package ss11_stack_queue.bai_tap.map;
 
 import ss10_array_list.array_list.linked_list.linked_list.LinkedList;
 
