@@ -4,7 +4,13 @@ public class House extends Facility {
     private String standarRoom;
     private int houseFloor;
 
-    public House(String serviceName, double area, double costRent, int maxPeople, double rentHour, String standarRoom, int houseFloor) {
+    public House(String serviceName,
+                 double area,
+                 double costRent,
+                 int maxPeople,
+                 double rentHour,
+                 String standarRoom,
+                 int houseFloor) {
         super(serviceName, area, costRent, maxPeople, rentHour);
         this.standarRoom = standarRoom;
         this.houseFloor = houseFloor;

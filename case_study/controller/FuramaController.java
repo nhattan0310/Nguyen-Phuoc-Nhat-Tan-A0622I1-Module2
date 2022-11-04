@@ -73,8 +73,7 @@ public class FuramaController {
 
         }
     }
-
-}
+    }
     public static void displayCustomerMenu(){
         CustomerServiceImpl customerService = new CustomerServiceImpl();
         boolean check = true;
@@ -115,10 +114,10 @@ public class FuramaController {
                     facilityService.display();
                     break;
                 case 2:
-                    facilityService.add();
+                    facilityService.addNewFacilityMenu();
                     break;
                 case 3:
-                    facilityService.edit();
+                    facilityService.displayMaintain();
                     break;
                 default:
                     displayMainMenu();
@@ -126,6 +125,7 @@ public class FuramaController {
             }
         }
     }
+
     public static void displayBookingMenu() {
         boolean check = true;
         while (check) {
