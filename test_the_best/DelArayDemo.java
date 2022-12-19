@@ -27,7 +27,6 @@ public class DelArayDemo {
             if (arr[i] != dellElement) {
                 arr2[i] = arr[i];
             } else {
-
                 for (int j = i; j < arr2.length; j++) {
                     arr2[i] = arr[i + 1];
                 }break loop1;

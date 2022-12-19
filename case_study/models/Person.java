@@ -7,7 +7,6 @@ public abstract class Person {
     private int identityCard;
     private int phoneNumber;
     private String gmail;
-
     public Person() {
     }
 

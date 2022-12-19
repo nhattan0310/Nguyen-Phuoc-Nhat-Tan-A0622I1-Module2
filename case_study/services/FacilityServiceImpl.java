@@ -5,12 +5,17 @@ import case_study.models.Facility;
 import case_study.models.House;
 import case_study.models.Room;
 import case_study.models.Villa;
+import case_study.untils.RegexData;
 
 import java.util.*;
 
 public class FacilityServiceImpl implements FacilityService{
-
-    //task5
+    public static final String REGEX_STR ="[A-Z][a-z]+";
+    public static final String REGEX_ID_VILLA="(SVVL)[-][\\d]{4}";
+    public static final String REGEX_AMOUNT="^[1-9]|([1][0-9])|(20)$";
+    public static final String REGEX_INT="[1-9]|([1][0-9])$";
+    public static final String REGEX_AREA="^([3-9]\\d[1-9]\\d{2,})$";
+//    //task5
     private static Scanner sc = new Scanner(System.in);
     private static Map<Facility,Integer> facilityIntegerMap=new LinkedHashMap<>();
     @Override
@@ -71,6 +76,10 @@ public class FacilityServiceImpl implements FacilityService{
         facilityIntegerMap.put(villa,0);
         System.out.println("Add New Villa Success");
     }
+//    private String inputId(){
+//        System.out.println("Enter ID,");
+////        return RegexData.regexStr();
+//    }
 
     @Override
     public void addNewHouse() {

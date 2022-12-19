@@ -33,7 +33,7 @@ public class Search {
 
         for (Character ch : max) {
             System.out.print(ch);
-            System.out.println();
+            //System.out.println();
         }
     }
 }

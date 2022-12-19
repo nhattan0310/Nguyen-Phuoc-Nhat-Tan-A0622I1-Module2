@@ -83,12 +83,5 @@ public class Fan {
         fan2.setOn(false);
         System.out.println(fan1.toString());
         System.out.println(fan2.toString());
-//        private final int SLOW =1;
-//        private final int MEDIUM =2;
-//        private final int FAST =3;
-//        private int speed =SLOW;
-//        private boolean on = false;
-//        private double radius = 5;
-//        private String color= "blue";
     }
 }

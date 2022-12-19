@@ -1,6 +1,6 @@
 package ss7_abstract_interface.colorable;
 
-public class Shape implements howToColor{
+public class Shape implements HowToColor {
     private String color = "green";
     private boolean filled = true;
 

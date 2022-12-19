@@ -1,63 +1,61 @@
 package ss12_framwork.bai_tap;
 import java.util.Objects;
 
-public class Product {
-    public String id;
-    public double price;
-    public String product;
+public class Product implements Comparable<Product>{
+    private int id;
+    private String name;
+    private float price;
 
     public Product() {
     }
 
-    public Product(String id, double price, String product) {
+    public Product(int id, String name, float price) {
         this.id = id;
+        this.name = name;
         this.price = price;
-        this.product = product;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
-    public double getPrice() {
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public float getPrice() {
         return price;
     }
 
-    public void setPrice(double price) {
+    public void setPrice(float price) {
         this.price = price;
     }
-
-    public String getProduct() {
-        return product;
+    public void printProduct(){
+        System.out.printf("%10s %30s %20s", "Product ID", "NAME", "PRICE");
+        System.out.println();
+        System.out.format("%10s %30s %20s",
+                this.id, this.name, this.price);
+        System.out.println();
     }
-
-    public void setProduct(String product) {
-        this.product = product;
-    }
-
     @Override
     public String toString() {
         return "Product{" +
-                "id='" + id + '\'' +
+                "id=" + id +
+                ", name='" + name + '\'' +
                 ", price=" + price +
-                ", product='" + product + '\'' +
                 '}';
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Product product1 = (Product) o;
-        return Double.compare(product1.price, price) == 0 && id.equals(product1.id) && product.equals(product1.product);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(id, price, product);
+    public int compareTo(Product o) {
+        return (int) ( this.price - o.price );
     }
 }
