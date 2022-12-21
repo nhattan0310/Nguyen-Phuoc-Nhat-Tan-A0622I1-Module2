@@ -15,7 +15,7 @@ public static void checkTriangleEdges(double a,double b,double c)throws IllegalT
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        double a, b, c=0;
+        double a, b, c;
         try {
             System.out.print("Enter a = ");
             a = sc.nextDouble();
