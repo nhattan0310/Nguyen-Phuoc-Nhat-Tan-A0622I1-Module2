@@ -18,21 +18,18 @@ public class testdowhile {
         boolean flag = false;
         do {
             flag =false;
-//            System.out.println("Enter a");
-//            System.out.println("Enter b");
-//            System.out.println("Enter c");
             double a, b, c ;
         try {
             System.out.print("Enter a = ");
-            String t = sc.nextLine();
+            String s = sc.nextLine();
             System.out.print("Enter b =");
-            String l = sc.nextLine();
-            System.out.print("Enter c =");
             String m = sc.nextLine();
+            System.out.print("Enter c =");
+            String l = sc.nextLine();
             try{
-               a=  Double.parseDouble(t);
-               b=  Double.parseDouble(l);
-               c=  Double.parseDouble(m);
+               a=  Double.parseDouble(s);
+               b=  Double.parseDouble(m);
+               c=  Double.parseDouble(l);
             }
             catch (Exception e){
                 e.printStackTrace();
@@ -44,17 +41,13 @@ public class testdowhile {
                 System.out.print("Enter c again = ");
                 c =  Double.parseDouble(sc.nextLine());
             }
-
-//            System.out.print("Enter b = ");
-//            b = sc.nextDouble();
-//            System.out.print("Enter c = ");
-//            c = sc.nextDouble();
             checkTriangleEdges(a,b,c);
             } catch (IllegalTriangleException2 exception) {
                 System.out.println(exception.getMessage());
             System.out.println("Nhap lai");
             flag =true;
-            }catch (NumberFormatException | InterruptedException e){
+            }
+        catch (NumberFormatException | InterruptedException e){
             flag =true;
             e.printStackTrace();
             System.out.println("Dang Nhap Chu");
