@@ -22,12 +22,14 @@ public class CopyFile {
 
     public static void main(String[] args) {
         File f0 = new File("D:\\CodeDao\\module2\\ss16_read_write_file\\thuc_hanh\\f0\\123.txt");
-        File f0_coppy = new File("D:\\CodeDao\\module2\\ss16_read_write_file\\thuc_hanh\\f1\\123.txt");
+        File f0_coppy = new File("D:\\CodeDao\\module2\\ss16_read_write_file\\thuc_hanh\\f1\\123coppy.txt");
         try{
             Files.copy(f0.toPath(), f0_coppy.toPath(), StandardCopyOption.REPLACE_EXISTING);
+            System.out.println("Coppy Success");
         } catch(IOException e){
             e.printStackTrace();
         }
 //        CopyFile.coppyALl(f0,f0_coppy);
+
     }
 }
